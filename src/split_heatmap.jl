@@ -31,7 +31,7 @@ for i in 1:length(x)-1
         # Coordinates of the lower triangle vertices
         xs = [x[i], x[i+1], x[i+1], x[i]]
         ys = [y[j], y[j], y[j+1], y[j+1]]
-        zs = [z1[i, j], z1[i+1, j], z1[i+1, j+1], z1[i, j+1]]  # Use z1 values for the vertices
+        zs = [0, 0, 0, 0] : [0, 0, 0, 0]  # Use z1 values for the vertices
 
         # Apply color based on z1 values
         color_vals = color_map(z1[i, j], cmap)
@@ -46,7 +46,7 @@ for i in 1:length(x)-1
         # Coordinates of the upper triangle vertices
         xs = [x[i+1], x[i], x[i], x[i+1]]
         ys = [y[j+1], y[j+1], y[j], y[j]]
-        zs = [z2[i+1, j+1], z2[i, j+1], z2[i, j], z2[i+1, j]]  # Use z2 values for the vertices
+        zs = [0, 0, 0, 0] : [0, 0, 0, 0]  # Use z2 values for the vertices
 
         # Apply color based on z2 values
         color_vals = color_map(z2[i, j], cmap)
