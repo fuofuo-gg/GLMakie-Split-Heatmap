@@ -23,10 +23,10 @@ Pkg.add("GLMakie")
 
 ## How to Use
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/fuofuo-gg/GLMakie-Split-Heatmap
-   cd GLMakie-Split-Heatmap
-   ```
+```bash
+git clone https://github.com/fuofuo-gg/GLMakie-Split-Heatmap
+cd GLMakie-Split-Heatmap
+```
 2.Run the Julia script:
 ```bash
 julia GLMakieSplitHeatmap.jl
